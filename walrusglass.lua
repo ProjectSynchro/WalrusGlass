@@ -595,7 +595,7 @@
                                                             end
                                                     elseif msg == "about" then
                                                             secondText.setX(32)
-                                                            slowText("walrusglass B v0.11 by 1lann", secondText)
+                                                            slowText("walrusglass v0.1 WalrusCode", secondText)
                                                     elseif (msg:sub(1,8) == "weather ") or msg == "weather" then
                                                             local location = nil
                                                             if msg:sub(1,12) == "weather for " then
