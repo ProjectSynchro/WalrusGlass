@@ -25,17 +25,7 @@
             os.loadAPI("ocs/apis/sensor")
     end
      
-    for k,v in pairs(rs.getSides()) do
-            if (peripheral.getType(v) == "openperipheral_glassesbridge") then
-                    walrusglass = peripheral.wrap(v)
-                    break
-            elseif (peripheral.getType(v) == "sensor") and (not worldSensor) then
-                    worldSensor = sensor.wrap(v)
-                    if not (worldSensor.getSensorName() == "worldCard") then
-                            worldSensor = false
-                    end
-            end
-    end
+    walrusglass = peripheral.wrap("back")
      
     if not walrusglass then print("Could not find Glass Bridge!") error() end
      
