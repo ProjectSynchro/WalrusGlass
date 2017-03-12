@@ -27,8 +27,6 @@
      
     walrusglass = peripheral.wrap("back")
      
-    if not walrusglass then print("Could not find Glass Bridge!") error() end
-     
     local rootApps = nil
      
     if searchArgs("root") then
